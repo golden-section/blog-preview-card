@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --color-yellow: #f4d04e;
+  --color-gray-950: #111;
+  --color-gray-500: #6b6b6b;
+  --color-white: #fff;
+}
+
+html,
+body,
+main {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-yellow);
+}
+
+main {
+  justify-content: center;
+  align-items: center;
+}
+
+.figtree-medium {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.figtree-extrabold {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.text-24 {
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--color-gray-950);
+}
+
+.text-16 {
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-gray-500);
+}
+
+.text-14 {
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--color-gray-950);
+}
+
+article {
+  max-width: 384px;
+  background: #ffffff;
+  border: 1px solid #111111;
+  box-shadow: 8px 8px 0px #000000;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.blog-image {
+  background-image: url(../assets/images/illustration-article.svg);
+  background-repeat: no-repeat;
+  background-color: var(--color-yellow);
+  height: 200px;
+  border-radius: 10px;
+}
+
+.vertical-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+article.vertical-flex {
+  row-gap: 24px;
+}
+
+.category {
+  padding: 4px 12px;
+  background-color: var(--color-yellow);
+  border-radius: 4px;
+  width: 82px;
+  text-align: center;
+}
+
+.content {
+  row-gap: 12px;
+}
+
+.blog-title a {
+  transition: 0.5s;
+}
+
+.blog-title a:hover {
+  color: var(--color-yellow);
+}
+
+.author {
+  padding-inline-start: 44px;
+  width: 129px;
+  height: 32px;
+  justify-content: center;
+  position: relative;
+}
+
+.author::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-image: url(../assets/images/image-avatar.webp);
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  position: absolute;
+  left: 0;
+}
