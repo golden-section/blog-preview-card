@@ -22,7 +22,7 @@ a {
 
 html,
 body,
-.wrapper {
+main {
   height: 100%;
 }
 
@@ -30,7 +30,7 @@ body {
   background-color: var(--color-yellow);
 }
 
-.wrapper {
+main {
   justify-content: center;
   align-items: center;
 }
